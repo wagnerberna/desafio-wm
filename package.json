@@ -1,0 +1,26 @@
+{
+  "name": "01-webmotors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wagnerberna/desafio-wm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wagnerberna/desafio-wm/issues"
+  },
+  "homepage": "https://github.com/wagnerberna/desafio-wm#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
