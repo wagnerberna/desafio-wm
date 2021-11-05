@@ -30,7 +30,7 @@ function App() {
 
   return (
     <main>
-      <Navbar title='Consulta API - WebMotors' />
+      <Navbar title='Consulta API - Webmotors' />
       <div className="container">
         <div className="row">
           <div className="col-7">
