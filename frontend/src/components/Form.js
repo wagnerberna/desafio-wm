@@ -1,5 +1,4 @@
 import React from "react";
-import PostApi from "../services/PostApi";
 
 const Form = ({item, setItem, setListUpdated}) => {
 
@@ -31,7 +30,7 @@ const Form = ({item, setItem, setListUpdated}) => {
     versao: '',
     ano: 2021,
     quilometragem: 0,
-    observacoes: '',
+    observacao: '',
     })
   }
   
@@ -61,7 +60,7 @@ const Form = ({item, setItem, setListUpdated}) => {
         <label htmlFor="observacao" className="form-label">Observações</label>
         <input name="observacao"  value={item.observacao} onChange={handleChange} type="text" id="observacoes" className="form-control"/>
       </div>
-      <button type="submit" className="btn btn-primary">Enviar</button>
+      <button type="submit" className="btn btn-primary">Adicionar</button>
     </form>
   );
 }
