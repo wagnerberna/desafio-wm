@@ -17,6 +17,11 @@ const Form = ({item, setItem, setListUpdated}) => {
       body: JSON.stringify(item)
     }
 
+    if ( item.marca === "" || item.modelo === "" || item.versao === "" || 
+    item.ano === "" || item.quilometragem === "" || item.observacao === "") {
+      alert("Todos campos são obrigatórios");
+    }
+
     const endpoint = 'http://localhost:3000/anuncios';
     fetch(endpoint, requestOptions)
     .then(res => res.json())
