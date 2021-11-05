@@ -2,7 +2,6 @@ const {Router} = require('express');
 const model = require('../models/anuncios');
 const {status, message} = require('../services')
 
-
 const router = Router();
 
 router.get('/', async (req, res) => {
@@ -26,10 +25,8 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
   try {
-    console.log("controller")
     const{marca, modelo, versao, ano, quilometragem, observacao} = req.body;
     const result = await model.add(marca, modelo, versao, ano, quilometragem, observacao);
-    console.log("controller2")
     res.status(status.CREATED).json({result})
   } catch (error) {
     res.status(status.SERVER_ERROR).send(message.serverError);
